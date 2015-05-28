@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SampleApp</title>
+  <title><%=yield(:title) %> | Adis Inc.</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
 </head>
 <body>
+<<<<<<< HEAD
 <body>
   
   <%= render 'layouts/header' %>
@@ -16,5 +18,13 @@
       <%= debug(params) if Rails.env.development? %>
     </div>
 
+=======
+
+ <%= render 'layouts/header' %>
+<div class="container">
+<%= yield %>
+<%= render 'layouts/footer' %>
+</div>
+>>>>>>> modeling-users
 </body>
 </html>
