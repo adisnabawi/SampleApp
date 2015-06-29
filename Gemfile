@@ -11,6 +11,12 @@ gem 'bcrypt', '3.1.7'
 
 gem 'bootstrap-sass', '3.2.0.0'
 
+gem 'faker'
+
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
+
 # static-pages
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
